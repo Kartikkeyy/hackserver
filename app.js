@@ -12,7 +12,7 @@ import { errorMiddleware } from "./middlewares/error.js";
 const app = express();
 dotenv.config({path:"./config/config.env"})
 app.use(cors({
-    origin:'https://recruitin-hackbyte.netlify.app/',
+    origin:'https://recruitin-hackbyte.netlify.app',
     methods: ['GET', 'POST' , 'DELETE', 'PUT'],
     credentials:true
 }))
